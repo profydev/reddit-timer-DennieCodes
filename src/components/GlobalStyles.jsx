@@ -1,12 +1,13 @@
-import { createGlobalStyle } from "styled-components";
+import React from 'react';
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2 {
-    font-family: "Bitter", serif;
+    font-family: 'Bitter', serif;
 }
 
 li {
