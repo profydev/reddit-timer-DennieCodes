@@ -19,8 +19,8 @@ function App() {
         <Header />
         <Main>
           <Routes>
-            <Route exact path='/' element={<Landing />} />
-            <Route exact path='/search' element={<Search />} />
+            <Route exact path="/" element={<Landing />} />
+            <Route exact path="/search" element={<Search />} />
           </Routes>
         </Main>
         <Footer />
