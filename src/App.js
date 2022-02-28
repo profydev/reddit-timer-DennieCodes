@@ -9,7 +9,10 @@ import Landing from './components/Landing';
 import Search from './components/Search';
 
 const AppContainer = styled.div``;
-const Main = styled.main``;
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+`;
 
 function App() {
   return (
