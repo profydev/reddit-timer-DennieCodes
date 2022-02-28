@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import logo from '../images/logo.png';
+import logo from '../images/logo.svg';
 
 const HeaderContainer = styled.header`
   padding: 2em 80px;
@@ -31,11 +31,14 @@ function Header() {
   return (
     <HeaderContainer>
       <MainNav>
-        <Logo src={logo} alt="reddit timer logo" />
+        <Link to="/">
+          <Logo src={logo} alt="reddit timer logo" />
+        </Link>
+
         <NavLinks>
-          <LinkItem to="#">Search</LinkItem>
-          <LinkItem to="#">How it works</LinkItem>
-          <LinkItem to="#">About</LinkItem>
+          <LinkItem to="/search/javascript">Search</LinkItem>
+          <LinkItem to="#how-it-works">How it works</LinkItem>
+          <LinkItem to="#about">About</LinkItem>
         </NavLinks>
       </MainNav>
     </HeaderContainer>
