@@ -13,6 +13,7 @@ const Main = styled.main`
   display: flex;
   flex-direction: column;
 `;
+const Main = styled.main``;
 
 function App() {
   return (
