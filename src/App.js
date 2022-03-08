@@ -16,21 +16,19 @@ const Main = styled.main`
 
 function App() {
   return (
-    <>
-      <Router>
-        <GlobalStyles />
-        <AppContainer>
-          <Header />
-          <Main>
-            <Routes>
-              <Route exact path="/" element={<Landing />} />
-              <Route exact path="/search" element={<Search />} />
-            </Routes>
-          </Main>
-          <Footer />
-        </AppContainer>
-      </Router>
-    </>
+    <Router>
+      <GlobalStyles />
+      <AppContainer>
+        <Header />
+        <Main>
+          <Routes>
+            <Route exact path="/" element={<Landing />} />
+            <Route exact path="/search" element={<Search />} />
+          </Routes>
+        </Main>
+        <Footer />
+      </AppContainer>
+    </Router>
   );
 }
 

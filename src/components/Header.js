@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import logo from '../images/logo.svg';
+import { ReactComponent } from '../images/logo.svg';
 
 const HeaderContainer = styled.header`
   padding: 2em 80px;
@@ -13,7 +13,7 @@ const MainNav = styled.nav`
   justify-content: space-between;
 `;
 
-const Logo = styled.img`
+const Logo = styled(ReactComponent)`
   display: block;
 `;
 
@@ -32,7 +32,7 @@ function Header() {
     <HeaderContainer>
       <MainNav>
         <Link to="/">
-          <Logo src={logo} alt="reddit timer logo" />
+          <Logo alt="reddit timer logo" />
         </Link>
 
         <NavLinks>
